@@ -13,7 +13,7 @@ function Projects() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/projects");
+        const res = await axios.get("https://lilesh-portfolio.vercel.app/projects");
 
         console.log(res.data);
         setBook(res.data);
