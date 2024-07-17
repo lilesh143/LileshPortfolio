@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 import axios from "axios";
+axios.defaults.withCredentials = true;
 
 import Cards from "../Cards";
 import PCard from "./PCard";
