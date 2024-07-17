@@ -38,9 +38,9 @@ function Navbar() {
   }, []);
   const navItems = (
     <>
-      <li>
+      {/* <li>
         <a href="/">Home</a>
-      </li>
+      </li> */}
       <li>
         <a href="/course">Course</a>
       </li>

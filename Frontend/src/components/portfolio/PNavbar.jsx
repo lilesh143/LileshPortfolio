@@ -41,15 +41,15 @@ function PNavbar() {
       <li>
         <a href="/">Home</a>
       </li>
-      <li>
+      {/* <li>
         <a href="/course">Course</a>
-      </li>
+      </li> */}
       <li>
         <a>Contact</a>
       </li>
-      <li>
+      {/* <li>
         <a href="/projects">Projects</a>
-      </li>
+      </li> */}
     </>
   );
   return (
