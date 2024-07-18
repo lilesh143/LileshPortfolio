@@ -9,14 +9,15 @@ import projectRoute from "./route/project.route.js"
 
 const app = express();
 
+dotenv.config();
+
 app.use(cors({
-    origin: ["https://lilesh-portfolio-frontend.vercel.app"],
-    methods: ["POST", "GET"],
+    origin: "https://lilesh-portfolio-frontend.vercel.app",
+    methods: ["POST", "GET", "OPTIONS", "PATCH", "DELETE", "PUT"],
     credentials: true
 }));
 app.use(express.json());
 
-dotenv.config();
 
 const PORT = process.env.PORT || 4000;
 const URI = process.env.MongoDBURI;
