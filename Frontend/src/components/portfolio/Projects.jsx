@@ -6,7 +6,6 @@ import Slider from "react-slick";
 
 import axios from "axios";
 axios.defaults.withCredentials = true;
-
 import Cards from "../Cards";
 import PCard from "./PCard";
 function Projects() {

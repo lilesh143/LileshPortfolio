@@ -12,7 +12,7 @@ const app = express();
 dotenv.config();
 
 app.use(cors({
-    origin: ["https://lilesh-portfolio-frontend.vercel.app/projects"],
+    origin: "https://lilesh-portfolio-frontend.vercel.app",
     methods: ["POST", "GET", "OPTIONS", "PATCH", "DELETE", "PUT"],
     credentials: true
 }));
@@ -25,8 +25,8 @@ const URI = process.env.MongoDBURI;
 // connect to mongoDB
 try {
     mongoose.connect(URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
+        // useNewUrlParser: true,
+        // useUnifiedTopology: true,
     });
     console.log("Connected to mongoDB");
 } catch (error) {
@@ -36,7 +36,7 @@ try {
 // defining routes
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
-app.use("/", projectRoute);
+app.use("/projects", projectRoute);
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
