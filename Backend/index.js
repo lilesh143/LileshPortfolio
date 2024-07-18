@@ -12,7 +12,7 @@ const app = express();
 dotenv.config();
 
 app.use(cors({
-    origin: "https://lilesh-portfolio-frontend.vercel.app",
+    origin: "https://lilesh-portfolio-frontend.vercel.app/projects",
     methods: ["POST", "GET", "OPTIONS", "PATCH", "DELETE", "PUT"],
     credentials: true
 }));
@@ -36,7 +36,7 @@ try {
 // defining routes
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
-app.use("/projects", projectRoute);
+app.use("/", projectRoute);
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
