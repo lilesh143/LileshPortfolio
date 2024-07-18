@@ -12,7 +12,7 @@ const app = express();
 dotenv.config();
 
 app.use(cors({
-    origin: "https://lilesh-portfolio-frontend.vercel.app/projects",
+    origin: ["https://lilesh-portfolio-frontend.vercel.app/projects"],
     methods: ["POST", "GET", "OPTIONS", "PATCH", "DELETE", "PUT"],
     credentials: true
 }));
