@@ -10,7 +10,7 @@ import projectRoute from "./route/project.route.js"
 const app = express();
 
 app.use(cors({
-    origin: ["https://lilesh-portfolio-frontend.vercel.app/*"],
+    origin: ["*"],
     methods: ["POST", "GET"],
     credentials: true
 }));
